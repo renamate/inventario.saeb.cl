@@ -11,21 +11,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: node scripts/materialize-upload.cjs
-      - name: Commit materialized files
+      - name: Materialize and upload via API
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -eux
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          ls -la data supabase .upload || true
-          wc -c "src/app/(app)/compras/tablero-compras.tsx" data/seed.json supabase/seed.sql package-lock.json || true
-          git status --porcelain
-          git add -A -- "src/app/(app)/compras/tablero-compras.tsx" data/seed.json supabase/seed.sql package-lock.json
-          git status --porcelain
-          git diff --cached --stat
-          if git diff --cached --quiet; then
-            echo "nothing to commit"
-            exit 0
+          node scripts/materialize-upload.cjs
+          BRANCH=cursor/poc-inventario-774c
+          upload() {
+            local path="$1"
+            local msg="$2"
+            local b64
+            b64=$(base64 -w0 "$path")
+            local sha
+            sha=$(gh api "repos/${{ github.repository }}/contents/${path}?ref=${BRANCH}" --jq .sha 2>/dev/null || true)
+            if [ -n "$sha" ]; then
+              gh api --method PUT "repos/${{ github.repository }}/contents/${path}" \
+                -f message="$msg" -f content="$b64" -f branch="$BRANCH" -f sha="$sha"
+            else
+              gh api --method PUT "repos/${{ github.repository }}/contents/${path}" \
+                -f message="$msg" -f content="$b64" -f branch="$BRANCH"
+            fi
+          }
+          upload "src/app/(app)/compras/tablero-compras.tsx" "POC: tablero-compras completo"
+          upload "data/seed.json" "POC: data/seed.json"
+          upload "supabase/seed.sql" "POC: supabase/seed.sql"
+          if [ -f package-lock.json ]; then
+            upload "package-lock.json" "POC: package-lock.json"
           fi
-          git commit -m "POC Inventario SAEB: materializar seed, tablero y package-lock"
-          git push
