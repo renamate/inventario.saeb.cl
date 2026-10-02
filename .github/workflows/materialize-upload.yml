@@ -2,7 +2,7 @@ name: Materialize upload
 on:
   push:
     branches: [cursor/poc-inventario-774c]
-    paths: ['.upload/**', 'scripts/materialize-upload.mjs']
+    paths: ['.upload/**', 'scripts/materialize-upload.cjs']
   workflow_dispatch:
 permissions:
   contents: write
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: node scripts/materialize-upload.mjs
+      - run: node scripts/materialize-upload.cjs
       - name: Commit materialized files
         run: |
           git config user.name "github-actions[bot]"
