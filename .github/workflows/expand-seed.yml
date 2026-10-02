@@ -1,0 +1,22 @@
+name: Expand seed.sql
+on:
+  push:
+    branches: [cursor/neon-migration-101f]
+    paths: [db/.seed.sql.zlib.b64]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode seed.sql
+        run: python3 db/decode-seed.py
+      - name: Commit seed.sql
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add db/seed.sql
+          git diff --cached --quiet || git commit -m "feat(neon): expand db/seed.sql from zlib blob"
+          git push
