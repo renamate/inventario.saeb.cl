@@ -1,0 +1,1 @@
+@file:///workspace/src/app/(app)/compras/tablero-compras.tsx
