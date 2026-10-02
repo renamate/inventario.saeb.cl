@@ -1,1 +1,1 @@
-@file:///workspace/src/app/(app)/compras/tablero-compras.tsx
+PLACEHOLDER_LOAD_FROM_FILE
