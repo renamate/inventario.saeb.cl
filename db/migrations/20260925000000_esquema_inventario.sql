@@ -1,5 +1,6 @@
--- Esquema del POC Inventario SAEB (bodega CDP).
+-- Esquema Inventario SAEB (bodega CDP) para Neon Postgres.
 -- El stock nunca se guarda a mano: se deriva de stock_inicial + movimientos (vista v_stock).
+-- RLS: la app se conecta como owner (DATABASE_URL); sin políticas públicas para roles anónimos.
 
 create extension if not exists pgcrypto;
 
@@ -195,8 +196,7 @@ select s.id, s.sku, coalesce(p.nombre, s.producto_texto) as producto, a.nombre a
   left join unidades_medida um on um.id = s.um_id
   left join proveedores pv on pv.id = s.proveedor_id;
 
--- La app accede con la service role key desde el servidor (Server Actions),
--- que aplica los permisos por rol. RLS activo sin políticas: la anon key no ve nada.
+-- RLS activo sin políticas públicas. La app usa DATABASE_URL (rol owner) desde el servidor.
 alter table perfiles enable row level security;
 alter table almacenes enable row level security;
 alter table unidades_medida enable row level security;

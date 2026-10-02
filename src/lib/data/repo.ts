@@ -8,7 +8,7 @@ import type {
   Solicitud,
 } from "../types";
 
-export type ModoDatos = "supabase" | "local";
+export type ModoDatos = "neon" | "local";
 
 export interface Repositorio {
   modo: ModoDatos;

@@ -74,7 +74,7 @@ export default async function RolesPage() {
       </Card>
       <p className="mt-3 text-xs text-muted-foreground">
         Los permisos se validan en el servidor en cada acción, no solo en la interfaz. En el MVP se reemplazan los perfiles demo
-        por usuarios reales con Supabase Auth.
+        por usuarios reales (auth propio o Neon Auth).
       </p>
     </>
   );

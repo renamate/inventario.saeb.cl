@@ -53,13 +53,13 @@ export default async function AdminPage() {
               <Database className="size-4" /> Origen de datos
             </CardTitle>
             <CardDescription>
-              {modo === "supabase"
-                ? "Conectado a Supabase (Postgres). Los datos persisten entre sesiones y dispositivos."
+              {modo === "neon"
+                ? "Conectado a Neon (Postgres). Los datos persisten entre sesiones y dispositivos."
                 : "Modo demo local: los datos del Excel se cargan desde data/seed.json y los cambios viven en el servidor mientras está encendido."}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-3 text-sm">
-            <Badge variant={modo === "supabase" ? "default" : "outline"}>{modo === "supabase" ? "Supabase" : "Demo local"}</Badge>
+            <Badge variant={modo === "neon" ? "default" : "outline"}>{modo === "neon" ? "Neon" : "Demo local"}</Badge>
             <dl className="grid grid-cols-2 gap-2">
               <dt className="text-muted-foreground">Archivo fuente</dt>
               <dd className="truncate">{seed.fuente}</dd>

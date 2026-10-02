@@ -1,7 +1,7 @@
 /**
  * Importa el Excel "SAEB 2027 Inventario CDP" y genera:
- *   - data/seed.json      → datos para el modo demo local (sin Supabase)
- *   - supabase/seed.sql   → inserts para cargar el proyecto Supabase
+ *   - data/seed.json  → datos para el modo demo local (sin Neon)
+ *   - db/seed.sql     → inserts para cargar el proyecto Neon
  *
  * Uso: npm run import:excel -- "ruta/al/archivo.xlsx"
  */
@@ -209,7 +209,8 @@ function main() {
 
   mkdirSync("data", { recursive: true });
   writeFileSync("data/seed.json", JSON.stringify(seed, null, 2) + "\n");
-  writeFileSync("supabase/seed.sql", generarSql(seed));
+  mkdirSync("db", { recursive: true });
+  writeFileSync("db/seed.sql", generarSql(seed));
 
   console.log(
     `OK: ${productos.length} productos, ${seed.almacenes.length} almacenes, ${seed.proveedores.length} proveedores, ` +

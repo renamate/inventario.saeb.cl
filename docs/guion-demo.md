@@ -1,7 +1,7 @@
 # Guion de demo (10 minutos)
 
 Objetivo: mostrar con los datos reales del Excel que el sistema reemplaza el papel, las fórmulas y la doble hoja COMPRAR / STOCK CRÍTICO.
-Antes de empezar, como administrador: **Administración → Reiniciar datos de la demo** (modo local) o vuelve a ejecutar `supabase/seed.sql`.
+Antes de empezar, como administrador: **Administración → Reiniciar datos de la demo** (modo local) o vuelve a ejecutar `db/seed.sql` en Neon test.
 
 | Min. | Perfil | Qué mostrar | Qué decir |
 |------|--------|-------------|-----------|

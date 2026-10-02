@@ -3,13 +3,13 @@
 Prueba de concepto (POC) del sistema digital de inventario de la bodega CDP del Salón de Asambleas El Belloto.
 Reemplaza la hoja en papel, las fórmulas del Excel *SAEB 2027 Inventario CDP* y la doble hoja COMPRAR / STOCK CRÍTICO.
 
-**Stack:** Next.js 16 (App Router, TypeScript) · Tailwind CSS 4 · shadcn/ui · Supabase (Postgres) · Vercel.
+**Stack:** Next.js 16 (App Router, TypeScript) · Tailwind CSS 4 · shadcn/ui · Neon (Postgres) · Vercel.
 
 ## Qué incluye
 
 | # | Capacidad | Dónde |
 |---|-----------|-------|
-| 1 | Importación del Excel (162 productos, 6 almacenes, 25 movimientos, 4 compras) | `scripts/import-excel.ts` → `data/seed.json` y `supabase/seed.sql` |
+| 1 | Importación del Excel (162 productos, 6 almacenes, 25 movimientos, 4 compras) | `scripts/import-excel.ts` → `data/seed.json` y `db/seed.sql` |
 | 2 | Dashboard con los 4 indicadores del Excel (**162 / 15 / 3 / 4**) y desglose por almacén | `/` |
 | 3 | Catálogo con búsqueda por SKU, nombre, proveedor o código, y filtros por almacén, especial y estado | `/catalogo`, `/catalogo/[sku]` |
 | 4 | Registro de movimientos pensado para el teléfono: autocompletado SKU ↔ nombre solo sobre el catálogo, tipo, cantidad con reglas de signo, UM automática, fecha y hora automáticas, responsable | `/registrar` |
@@ -33,16 +33,16 @@ Requisitos: Node.js 20 o superior.
 
 ```bash
 npm install
-cp .env.example .env.local   # opcional: sin Supabase funciona en modo demo local
+cp .env.example .env.local   # opcional: sin Neon funciona en modo demo local
 npm run dev                  # http://localhost:4317
 ```
 
 Ingresa con cualquiera de los 3 perfiles. En desarrollo, si no defines `DEMO_PASSWORD`, la clave es `saeb2027`.
 
-### Modo demo local (sin Supabase)
+### Modo demo local (sin Neon)
 
-Si no están las variables de Supabase, la app carga `data/seed.json` (los datos reales del Excel) y guarda los cambios en `.data/demo-db.json`.
-En Vercel sin Supabase, los cambios viven en la memoria de la función y se pierden cuando se recicla: sirve para mostrar, no para operar.
+Si no está `DATABASE_URL`, la app carga `data/seed.json` (los datos reales del Excel) y guarda los cambios en `.data/demo-db.json`.
+En Vercel sin Neon, los cambios viven en la memoria de la función y se pierden cuando se recicla: sirve para mostrar, no para operar.
 El administrador puede volver al estado del Excel con **Administración → Reiniciar datos de la demo**.
 
 ### Scripts
@@ -52,43 +52,49 @@ El administrador puede volver al estado del Excel con **Administración → Rein
 | `npm run dev` | Servidor de desarrollo en el puerto 4317 |
 | `npm run build` / `npm start` | Build y servidor de producción |
 | `npm run lint` | ESLint |
-| `npm run import:excel -- "ruta/al/archivo.xlsx"` | Regenera `data/seed.json` y `supabase/seed.sql` desde el Excel |
-| `npm run verificar` | Comprueba que los indicadores cuadren con el Excel (usa Supabase si está configurado) |
+| `npm run import:excel -- "ruta/al/archivo.xlsx"` | Regenera `data/seed.json` y `db/seed.sql` desde el Excel |
+| `npm run verificar` | Comprueba que los indicadores cuadren con el Excel (usa Neon si hay `DATABASE_URL`) |
 | `npm run verificar -- --escribir` | Además registra movimientos y solicitudes de prueba (no usar sobre datos reales) |
 
-## Desplegar en Vercel + Supabase
+## Desplegar en Vercel + Neon
 
-### 1. Crear la base en Supabase
+### 1. Base de datos en Neon
 
-1. En [supabase.com/dashboard](https://supabase.com/dashboard) crea un proyecto (región recomendada: *South America (São Paulo)*). Guarda la contraseña de la base.
-2. Abre **SQL Editor → New query**, pega el contenido de `supabase/migrations/20260925000000_esquema_inventario.sql` y ejecútalo.
-3. En otra query, pega el contenido de `supabase/seed.sql` y ejecútalo. Carga los datos del Excel (se puede volver a ejecutar para reiniciar).
-4. En **Project Settings → API Keys** copia la **Project URL** y la clave **service_role** (o una *secret key* `sb_secret_…`). Esta clave es solo para el servidor: no la publiques.
+1. En [console.neon.tech](https://console.neon.tech) crea un proyecto (región recomendada: *AWS South America East 1 — São Paulo*). Guarda el connection string.
+2. Aplica el esquema: `psql "$DATABASE_URL" -f db/migrations/20260925000000_esquema_inventario.sql`
+3. Carga los datos: `psql "$DATABASE_URL" -f db/seed.sql` (es idempotente; se puede volver a ejecutar para reiniciar).
+4. Usa el connection string **pooled** (`…-pooler…`) en Vercel como `DATABASE_URL`.
 
-> Alternativa con la CLI: `npx supabase link --project-ref <ref>`, `npx supabase db push` y luego ejecuta `supabase/seed.sql` con `psql "<connection string>" -f supabase/seed.sql`.
+Proyectos previstos:
 
-### 2. Crear el proyecto en Vercel
+| Entorno | Nombre Neon | Uso |
+|---------|-------------|-----|
+| Producción | `inventario-saeb-prod` | App pública / `inventario.saeb.cl` |
+| Pruebas | `inventario-saeb-test` | Demos, reseeds, pruebas |
 
-1. En [vercel.com/new](https://vercel.com/new) importa este repositorio. Vercel detecta Next.js; no hay que cambiar el build.
-2. En **Environment Variables** agrega:
+> **Storage de imágenes:** Neon Object Storage (branchable) aún no está disponible en São Paulo; cuando lo habiliten, crear el bucket `product-images` vía MCP/`create_storage_bucket`.
+
+### 2. Proyecto en Vercel
+
+1. En [vercel.com/new](https://vercel.com/new) importa este repositorio. Vercel detecta Next.js.
+2. En **Environment Variables** (Production apuntando a Neon **prod**):
 
    | Variable | Valor |
    |----------|-------|
-   | `DEMO_PASSWORD` | Clave de acceso que compartirás con quienes prueben la demo |
+   | `DEMO_PASSWORD` | Clave compartida de los 3 perfiles demo |
    | `AUTH_SECRET` | Texto aleatorio largo (`openssl rand -base64 32`) |
-   | `NEXT_PUBLIC_SUPABASE_URL` | Project URL de Supabase |
-   | `SUPABASE_SERVICE_ROLE_KEY` | Clave service_role o secret key de Supabase |
-   | `APP_URL` (opcional) | Dominio final, p. ej. `https://inventario.saeb.cl`, para que las etiquetas QR apunten ahí |
+   | `DATABASE_URL` | Connection string pooled de Neon prod |
+   | `APP_URL` (opcional) | `https://inventario.saeb.cl` |
 
-   Si prefieres, la integración **Supabase** de Vercel Marketplace crea `NEXT_PUBLIC_SUPABASE_URL` y `SUPABASE_SERVICE_ROLE_KEY` automáticamente; en ese caso ejecuta la migración y el seed en el proyecto que cree.
-3. Pulsa **Deploy**. En el menú de usuario de la app debe aparecer "Datos: Supabase".
-4. (Opcional) En **Settings → Domains** agrega `inventario.saeb.cl` y crea el registro CNAME que indica Vercel.
+3. Pulsa **Deploy**. En el menú de usuario debe aparecer «Datos: Neon».
+4. (Opcional) Preview/segundo proyecto Vercel con `DATABASE_URL` de `inventario-saeb-test`.
+5. Dominio: `inventario.saeb.cl` → Production.
 
-### 3. Proteger el acceso
+### 3. Acceso demo
 
-- La app exige iniciar sesión en todas las rutas (incluida la exportación CSV). La clave es `DEMO_PASSWORD`.
-- Con **Settings → Deployment Protection → Vercel Authentication** también quedan protegidas las URLs de *preview*.
-- Todas las tablas tienen Row Level Security activo sin políticas públicas: la clave anónima de Supabase no puede leer nada. La app accede solo desde el servidor.
+- La app exige iniciar sesión. La clave es `DEMO_PASSWORD` (por defecto en desarrollo: `saeb2027`).
+- Perfiles: **Voluntario**, **Encargada**, **Administrador** (misma clave).
+- Con **Deployment Protection** de Vercel también quedan protegidas las URLs de preview.
 
 ## Estructura
 
@@ -96,9 +102,9 @@ El administrador puede volver al estado del Excel con **Administración → Rein
 data/seed.json                 Datos del Excel normalizados (modo demo local)
 scripts/import-excel.ts        Importador Excel → seed.json + seed.sql
 scripts/verificar.ts           Verificación de indicadores y flujo
-supabase/migrations/           Esquema Postgres, vistas y RLS
-supabase/seed.sql              Carga de datos para Supabase
-src/lib/data/                  Repositorio: local.ts (demo) y supabase.ts
+db/migrations/                 Esquema Postgres, vistas y RLS
+db/seed.sql                    Carga de datos para Neon
+src/lib/data/                  Repositorio: local.ts (demo) y neon.ts
 src/lib/stock.ts               Reglas de stock (misma lógica que la vista v_stock)
 src/app/acciones.ts            Server Actions con validación y permisos por rol
 src/app/(app)/                 Páginas: dashboard, catálogo, registrar, compras, historial, etiquetas, roles, admin
@@ -107,7 +113,7 @@ docs/guion-demo.md             Guion de demo de 10 minutos
 
 ## Limitaciones conocidas del POC
 
-- Los perfiles son de demostración con una clave compartida; el MVP usará Supabase Auth con usuarios reales.
+- Los perfiles son de demostración con una clave compartida; el MVP usará autenticación real.
 - Sin operación offline (PWA con cola de sincronización queda para el MVP).
 - Los 25 movimientos del Excel no tienen fecha: se importaron con fecha 18-sep-2026 y la observación "Importado del Excel (sin fecha original)".
 - La cámara del navegador requiere HTTPS (en Vercel funciona; en local solo en `localhost`).

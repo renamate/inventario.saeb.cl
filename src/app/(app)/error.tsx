@@ -10,8 +10,8 @@ export default function ErrorApp({ error, reset }: { error: Error & { digest?: s
       <TriangleAlert className="size-10 text-amber-600" />
       <h1 className="mt-4 text-xl font-semibold">No pudimos cargar esta sección</h1>
       <p className="mt-2 text-sm text-muted-foreground">
-        {error.message.startsWith("Supabase")
-          ? "La base de datos no respondió. Revisa las variables de Supabase o que el proyecto no esté pausado."
+        {error.message.startsWith("Neon")
+          ? "La base de datos no respondió. Revisa DATABASE_URL o que el compute de Neon no esté suspendido."
           : "Ocurrió un error inesperado. Intenta de nuevo."}
       </p>
       <Button className="mt-6" onClick={reset}>
