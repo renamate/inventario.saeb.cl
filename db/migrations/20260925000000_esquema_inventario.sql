@@ -135,7 +135,7 @@ create trigger movimientos_folio
   before insert on movimientos
   for each row execute function asignar_folio();
 
--- Stock derivado. Regla de critico igual al Excel:
+-- Stock derivado. Regla de crítico igual al Excel:
 -- no especial, existencia >= 0 y existencia <= mínimo (mínimo vacío = 0).
 create or replace view v_stock as
 with periodo as (
