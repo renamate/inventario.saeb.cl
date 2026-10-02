@@ -2,7 +2,7 @@ name: Expand package-lock
 on:
   push:
     branches: [cursor/neon-migration-101f]
-    paths: ['db/.package-lock.part0.zlib.b64', 'db/.package-lock.part1.zlib.b64', 'db/.package-lock.part2.zlib.b64', 'db/.package-lock.part3.zlib.b64']
+    paths: ['db/.package-lock.part15.zlib.b64']
   workflow_dispatch:
 permissions:
   contents: write
@@ -14,8 +14,14 @@ jobs:
       - name: Assemble and decode package-lock.json
         run: |
           python3 - <<'PY'
-          import base64, zlib, pathlib
-          parts = [pathlib.Path(f'db/.package-lock.part{i}.zlib.b64').read_text().strip() for i in range(4)]
+          import base64, zlib, pathlib, re, sys
+          parts = []
+          for i in range(16):
+              p = pathlib.Path(f'db/.package-lock.part{i}.zlib.b64')
+              if not p.exists():
+                  print(f'missing {p}', file=sys.stderr)
+                  sys.exit(1)
+              parts.append(re.sub(r'\s+', '', p.read_text()))
           data = zlib.decompress(base64.b64decode(''.join(parts)))
           pathlib.Path('package-lock.json').write_bytes(data)
           print(f'wrote package-lock.json ({len(data)} bytes)')
