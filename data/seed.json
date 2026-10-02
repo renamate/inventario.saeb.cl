@@ -1,0 +1,3360 @@
+{
+  "fuente": "inv.xlsx",
+  "generadoEn": "2026-09-25T16:03:41.176Z",
+  "anio": 2027,
+  "excelIndicadores": {
+    "productosActivos": 162,
+    "stockCritico": 15,
+    "stockNegativo": 3,
+    "porComprar": 4
+  },
+  "almacenes": [
+    "Alimento",
+    "Elementos Limpieza",
+    "Limpieza",
+    "Maquillaje",
+    "Oficina",
+    "Primeros Auxilios"
+  ],
+  "unidades": [
+    {
+      "codigo": "Paq 50u",
+      "descripcion": "Paquete de 50 unidades"
+    },
+    {
+      "codigo": "Un",
+      "descripcion": "Unidad"
+    },
+    {
+      "codigo": "Paq",
+      "descripcion": "Paquete"
+    },
+    {
+      "codigo": "Paq 100u",
+      "descripcion": "Paquete de 100 unidades"
+    },
+    {
+      "codigo": "Caja",
+      "descripcion": "Caja"
+    },
+    {
+      "codigo": "Bidón",
+      "descripcion": "Bidón"
+    },
+    {
+      "codigo": "Paq 200u",
+      "descripcion": "Paquete de 200 unidades"
+    }
+  ],
+  "proveedores": [
+    {
+      "nombre": "Baden Power",
+      "urlPortal": null
+    },
+    {
+      "nombre": "Easy",
+      "urlPortal": "https://www.easy.cl"
+    },
+    {
+      "nombre": "Prisa",
+      "urlPortal": "https://www.prisa.cl"
+    },
+    {
+      "nombre": "San Agustin",
+      "urlPortal": null
+    }
+  ],
+  "productos": [
+    {
+      "sku": 336,
+      "nombre": "Aceite maravilla, 8ml, caja 300un, sachet",
+      "descripcionProveedor": "ACEITE: maravilla, 8ml, caja 300un, sachet",
+      "um": "Paq 50u",
+      "umOriginal": "paq 50u",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 294,
+      "nombre": "Adhesivo: Pegamento en barra",
+      "descripcionProveedor": "ADHESIVO: barra, 21 gr",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 1,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 168,
+      "nombre": "Agua micelar",
+      "descripcionProveedor": "AGUA MICELAR:",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Maquillaje",
+      "activo": true
+    },
+    {
+      "sku": 170,
+      "nombre": "Alcohol desnaturalizado, 70% lt",
+      "descripcionProveedor": "ALCOHOL: desnaturalizado, 70% lt",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 4,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 169,
+      "nombre": "Alcohol gel repuesto, dispensador",
+      "descripcionProveedor": "ALCOHOL GEL: repuesto, dispensador",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 3,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 171,
+      "nombre": "Alcohol isopropilico, 1 lt",
+      "descripcionProveedor": "ALCOHOL: Isopropilico, K-Byte Puro, 1 lt",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 172,
+      "nombre": "Aspiradora bolsa, uz930 bp9000",
+      "descripcionProveedor": "ASPIRADORA: bolsa, UZ930 BP9000",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 173,
+      "nombre": "Aspiradora karcher nt 70/2 bolsa papel",
+      "descripcionProveedor": "ASPIRADORA KARCHER NT 70/2: bolsa papel",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 174,
+      "nombre": "Aspiradora karcher nt 70/2 filtro polvo",
+      "descripcionProveedor": "ASPIRADORA KARCHER NT 70/2: filtro polvo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 175,
+      "nombre": "Aspiradora karcher vc2 bolsa",
+      "descripcionProveedor": "ASPIRADORA KARCHER VC2: bolsa",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 201,
+      "nombre": "Atomizador gatillo",
+      "descripcionProveedor": "ATOMIZADOR: gatillo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 333,
+      "nombre": "Azucar blanca, 5grs, caja 800 sachet",
+      "descripcionProveedor": "AZUCAR: blanca, 5grs, caja 800 sachet",
+      "um": "Paq",
+      "umOriginal": "Paq",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 177,
+      "nombre": "Balde estrujador doméstico",
+      "descripcionProveedor": "BALDE: estrujador doméstico",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 178,
+      "nombre": "Basureros color azul, 30 lts",
+      "descripcionProveedor": "BASUREROS: color azul, 30 lts",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 285,
+      "nombre": "Bateria d",
+      "descripcionProveedor": "BATERIA: D",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 179,
+      "nombre": "Bolsa basura, 50x70cm, 10un.",
+      "descripcionProveedor": "BOLSA: basura, 50x70cm, 10un.",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 25,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 180,
+      "nombre": "Bolsa basura, 80x110cm, 10un",
+      "descripcionProveedor": "BOLSA: basura, 80x110cm, 10un",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 25,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 341,
+      "nombre": "Bolsa basura, carga pesada, 120x140cm",
+      "descripcionProveedor": "BOLSA: basura, carga pesada, 120x140cm",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 25,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 182,
+      "nombre": "Bolsa basura, rollo, 45x50cm",
+      "descripcionProveedor": "BOLSA: basura, rollo, 45x50cm",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 25,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 356,
+      "nombre": "Bolsa basura, rollo, 50x55cm",
+      "descripcionProveedor": "BOLSA: basura, rollo, 50x55cm",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 25,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 183,
+      "nombre": "Bolsa lavado",
+      "descripcionProveedor": "BOLSA: lavado",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 184,
+      "nombre": "Bolsa transparente 20x30cm, prepicada, rollo 8-10kg",
+      "descripcionProveedor": "BOLSA: transparente 20x30cm, prepicada, rollo 8-10kg",
+      "um": "Paq 100u",
+      "umOriginal": "Paq 100u",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 185,
+      "nombre": "Botella plástica, doble cuello, 1lt, c/dosificador 40ml",
+      "descripcionProveedor": "BOTELLA: Plástica, Doble cuello, 1lt, C/dosificador 40ml",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 111,
+      "nombre": "Café grano, molido, 250gr",
+      "descripcionProveedor": "CAFÉ: grano, molido, 250gr",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 10,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 342,
+      "nombre": "Café instantaneo, en polvo, sachet 1,8gr",
+      "descripcionProveedor": "CAFÉ: instantaneo, en polvo, sachet 1,8gr",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 348,
+      "nombre": "Cartonero: Cuchillo cartonero",
+      "descripcionProveedor": "CARTONERO: Cuchillo cartonero",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 349,
+      "nombre": "Cartonero:Repuestos hojas cuchillo",
+      "descripcionProveedor": "CARTONERO:Repuestos hojas cuchillo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 269,
+      "nombre": "Cartucho  tinta, 662 hp , xl, negro",
+      "descripcionProveedor": "CARTUCHO:  tinta, 662 HP , xl, negro",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 270,
+      "nombre": "Cartucho tinta, 662 hp, cartucho, xl, tricolor",
+      "descripcionProveedor": "CARTUCHO: tinta, 662 HP, cartucho, xl, tricolor",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 187,
+      "nombre": "Cepillo wc con base",
+      "descripcionProveedor": "CEPILLO: WC con base",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 188,
+      "nombre": "Cera acrílica, 20lt",
+      "descripcionProveedor": "CERA: acrílica, 20lt",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 271,
+      "nombre": "Cinta adhesiva cristal o transparente",
+      "descripcionProveedor": "CINTA ADHESIVA: cristal o transparente",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 304,
+      "nombre": "Cinta adhesiva micropore piel,  25mm, 9.1 mts",
+      "descripcionProveedor": "CINTA ADHESIVA: Micropore Piel,  25mm, 9.1 mts",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Primeros Auxilios",
+      "activo": true
+    },
+    {
+      "sku": 343,
+      "nombre": "Cinta rotuladora,Brother TZe-231 12 mm, Blanco",
+      "descripcionProveedor": "CINTA ROTULADORA: Brother TZe-231 12 mm,Blanco",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 344,
+      "nombre": "Cinta rotuladora,Brother TZe-631 12mm, amarillo",
+      "descripcionProveedor": "CINTA  ROTULADORA:Brother TZe-631 12 mm, amarillo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 345,
+      "nombre": "Cinta rotuladota,Brother TZe-431 12mm,rojo",
+      "descripcionProveedor": "CINTA ROTULADORA:Brother TZe-431, rojo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 346,
+      "nombre": "Clip de papel",
+      "descripcionProveedor": "CLIP de papel",
+      "um": "Paq 50u",
+      "umOriginal": "paq 50u",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 189,
+      "nombre": "Cloro gel, 900cc",
+      "descripcionProveedor": "CLORO: gel, 900cc",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 190,
+      "nombre": "Cloro líquido",
+      "descripcionProveedor": "CLORO: líquido",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 305,
+      "nombre": "Cloruro de sodio 10ml",
+      "descripcionProveedor": "CLORURO DE SODIO: 10ml",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Primeros Auxilios",
+      "activo": true
+    },
+    {
+      "sku": 303,
+      "nombre": "Copos algodón,100 u",
+      "descripcionProveedor": "COPOS: algodón,100 U",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Primeros Auxilios",
+      "activo": true
+    },
+    {
+      "sku": 272,
+      "nombre": "Corrector tipo cinta, 4mm",
+      "descripcionProveedor": "CORRECTOR: Tipo cinta, 4mm",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 191,
+      "nombre": "Cotonito de algodón 200un",
+      "descripcionProveedor": "COTONITO DE ALGODÓN: 200un",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 273,
+      "nombre": "Cuaderno universitario, matemáticas, 100hj",
+      "descripcionProveedor": "CUADERNO: universitario, matemáticas, 100hj",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 120,
+      "nombre": "Cuchara desechable, plástica, sopera",
+      "descripcionProveedor": "CUCHARA: desechable, plástica, sopera",
+      "um": "Paq",
+      "umOriginal": "Paq",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 193,
+      "nombre": "Desinfectante 5 lts.",
+      "descripcionProveedor": "DESINFECTANTE: 5 lts.",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 4,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 194,
+      "nombre": "Desodorante ambiental spray variedad",
+      "descripcionProveedor": "DESODORANTE AMBIENTAL: Spray Variedad",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 5,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 274,
+      "nombre": "Destacador amarillo",
+      "descripcionProveedor": "DESTACADOR: amarillo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 275,
+      "nombre": "Destacador naranjo",
+      "descripcionProveedor": "DESTACADOR: naranjo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 276,
+      "nombre": "Destacador verde",
+      "descripcionProveedor": "DESTACADOR: verde",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 261,
+      "nombre": "Destapador negro, mango barniz (sopapo)",
+      "descripcionProveedor": "DESTAPADOR: negro, mango barniz (sopapo)",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 195,
+      "nombre": "Detergente ropa",
+      "descripcionProveedor": "DETERGENTE ROPA",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 6,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 352,
+      "nombre": "Doble clip negro,sujetador de papel",
+      "descripcionProveedor": "DOBLE CLIP:Caja 12 unidades",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 362,
+      "nombre": "Endulsante, 5 grs, caja 100 u, sachet",
+      "descripcionProveedor": "Endulsante, 5 grs, paq 100 u, sachet",
+      "um": "Paq 100u",
+      "umOriginal": "paq 100",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 196,
+      "nombre": "Escobilla mano clásica",
+      "descripcionProveedor": "ESCOBILLA: mano clásica",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 197,
+      "nombre": "Escobillon exterior cerda negra",
+      "descripcionProveedor": "ESCOBILLON EXTERIOR: cerda negra",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 198,
+      "nombre": "Escobillon tradicional",
+      "descripcionProveedor": "ESCOBILLON: tradicional",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 200,
+      "nombre": "Esponja abrasiva, verde amarillo",
+      "descripcionProveedor": "ESPONJA: abrasiva, verde amarillo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 4,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 314,
+      "nombre": "Esponja aplicador maquillaje",
+      "descripcionProveedor": "ESPONJA: aplicador maquillaje",
+      "um": "Paq",
+      "umOriginal": "Paq",
+      "especial": false,
+      "stockMinimo": 30,
+      "almacen": "Maquillaje",
+      "activo": true
+    },
+    {
+      "sku": 309,
+      "nombre": "Foille bliste ungüento anestésico, antiséptico, 28grs",
+      "descripcionProveedor": "FOILLE BLISTE UNGÜENTO: anestésico, antiséptico, 28grs",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Primeros Auxilios",
+      "activo": true
+    },
+    {
+      "sku": 317,
+      "nombre": "Frasco cuadrado, decorativo, florero",
+      "descripcionProveedor": "FRASCO: cuadrado, decorativo, florero",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 355,
+      "nombre": "Funda plasticas tamaño carta",
+      "descripcionProveedor": "FUNDA: plasticas tamaño carta",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 312,
+      "nombre": "Gasa  no tejida, estéril, 7,5x7,5 cm,50u",
+      "descripcionProveedor": "GASA:  no tejida, estéril, 7,5x7,5 cm,50u",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Primeros Auxilios",
+      "activo": true
+    },
+    {
+      "sku": 311,
+      "nombre": "Gasa no tejida, estéril, 5x5 cm,50u",
+      "descripcionProveedor": "GASA: no tejida, estéril, 5x5 cm,50u",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Primeros Auxilios",
+      "activo": true
+    },
+    {
+      "sku": 202,
+      "nombre": "Gorro desechable, tipo clip, blanco, caja 100 un",
+      "descripcionProveedor": "GORRO: desechable, tipo clip, blanco, caja 100 un",
+      "um": "Paq 100u",
+      "umOriginal": "Paq (100u)",
+      "especial": false,
+      "stockMinimo": 4,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 203,
+      "nombre": "Guantes goma, talla l",
+      "descripcionProveedor": "GUANTES: goma, talla L",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": false,
+      "stockMinimo": 5,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 204,
+      "nombre": "Guantes goma, talla m",
+      "descripcionProveedor": "GUANTES: goma, talla M",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": false,
+      "stockMinimo": 5,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 205,
+      "nombre": "Guantes goma, talla s",
+      "descripcionProveedor": "GUANTES: goma, talla S",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": false,
+      "stockMinimo": 5,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 206,
+      "nombre": "Guantes látex, large, 100 un/cj",
+      "descripcionProveedor": "GUANTES: látex, large, 100 un/cj",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": false,
+      "stockMinimo": 10,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 207,
+      "nombre": "Guantes látex, medium, 100un/cj",
+      "descripcionProveedor": "GUANTES: látex, medium, 100un/cj",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": false,
+      "stockMinimo": 10,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 208,
+      "nombre": "Guantes látex, small, 100un/cj",
+      "descripcionProveedor": "GUANTES: látex, small, 100un/cj",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": false,
+      "stockMinimo": 10,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 209,
+      "nombre": "Guantes polietileno, desechable, 100un/bolsa",
+      "descripcionProveedor": "GUANTES: polietileno, desechable, 100un/bolsa",
+      "um": "Paq",
+      "umOriginal": "Paq",
+      "especial": false,
+      "stockMinimo": 5,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 210,
+      "nombre": "Harpic gel desinfectante, removedor de sarro 750 ml",
+      "descripcionProveedor": "HARPIC GEL: Desinfectante, Removedor de Sarro 750 ml",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 211,
+      "nombre": "Insecticida casa y jardín, 360cc",
+      "descripcionProveedor": "INSECTICIDA: casa y jardín, 360cc",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 212,
+      "nombre": "Insecticida mata arañas, 360cc",
+      "descripcionProveedor": "INSECTICIDA: mata arañas, 360cc",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 213,
+      "nombre": "Jabon espuma, repuesto, dispensador",
+      "descripcionProveedor": "JABON: espuma, repuesto, dispensador",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 6,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 215,
+      "nombre": "Lampazo armazón 24\"",
+      "descripcionProveedor": "LAMPAZO: armazón 24\"",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 216,
+      "nombre": "Lampazo armazón 36\"",
+      "descripcionProveedor": "LAMPAZO: armazón 36\"",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 217,
+      "nombre": "Lampazo mango de aluminio",
+      "descripcionProveedor": "LAMPAZO: mango de aluminio",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 218,
+      "nombre": "Lampazos mopa seca 24\"",
+      "descripcionProveedor": "LAMPAZOS: mopa seca 24\"",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 219,
+      "nombre": "Lampazos mopa seca 36\"",
+      "descripcionProveedor": "LAMPAZOS: mopa seca 36\"",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 278,
+      "nombre": "Lápiz  pasta, punta fina, color azul",
+      "descripcionProveedor": "LÁPIZ:  pasta, punta fina, color azul",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 279,
+      "nombre": "Lápiz  pasta, punta fina, color negro",
+      "descripcionProveedor": "LÁPIZ:  pasta, punta fina, color negro",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 280,
+      "nombre": "Lápiz  pasta, punta fina, color rojo",
+      "descripcionProveedor": "LÁPIZ:  pasta, punta fina, color rojo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 220,
+      "nombre": "Lavalozas 5 lts.",
+      "descripcionProveedor": "LAVALOZAS: 5 lts.",
+      "um": "Bidón",
+      "umOriginal": "Bidón",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 221,
+      "nombre": "Limpia lavadora",
+      "descripcionProveedor": "LIMPIA LAVADORA",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 4,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 222,
+      "nombre": "Limpia tapiz karcher, liquido",
+      "descripcionProveedor": "LIMPIA TAPIZ: Karcher, liquido",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 359,
+      "nombre": "Limpiador antigrasa, 500 cc",
+      "descripcionProveedor": "LIMPIADOR: Antigrasa, 500cc",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": null,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 224,
+      "nombre": "Limpiador crema, 750ml",
+      "descripcionProveedor": "LIMPIADOR: crema, 750ml",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 318,
+      "nombre": "Mantel tela, negro",
+      "descripcionProveedor": "MANTEL: tela, negro",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 295,
+      "nombre": "Marcador plumon permanente, punta fina, negro",
+      "descripcionProveedor": "MARCADOR: plumon permanente, punta fina, negro",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 296,
+      "nombre": "Marcador plumon pizarra azul",
+      "descripcionProveedor": "MARCADOR: plumon pizarra azul",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 297,
+      "nombre": "Marcador plumón pizarra negro",
+      "descripcionProveedor": "MARCADOR: plumón pizarra negro",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 298,
+      "nombre": "Marcador plumón pizarra rojo",
+      "descripcionProveedor": "MARCADOR: plumón pizarra rojo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 347,
+      "nombre": "Marcador plumón pizarra verde",
+      "descripcionProveedor": "MARCADOR: plumón pizarra verde",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 227,
+      "nombre": "Mascarilla desechable, kn 95",
+      "descripcionProveedor": "MASCARILLA: desechable, KN 95",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 228,
+      "nombre": "Mascarilla desechable, rectangular, tres pliegues, caja, 50 un",
+      "descripcionProveedor": "MASCARILLA: desechable, rectangular, tres pliegues, caja, 50 un",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 230,
+      "nombre": "Mopa doméstica con mango",
+      "descripcionProveedor": "MOPA: doméstica con mango",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 231,
+      "nombre": "Mopa doméstica, repuesto",
+      "descripcionProveedor": "MOPA: doméstica, repuesto",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 357,
+      "nombre": "Mopa húmeda, algodón, 16oz",
+      "descripcionProveedor": "Mopa húmeda, algodón, 16oz",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 233,
+      "nombre": "Mopa húmeda, algodón, 24oz",
+      "descripcionProveedor": "MOPA: húmeda, algodón, 24oz",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 234,
+      "nombre": "Neutralizador de olores bidón, 5lt",
+      "descripcionProveedor": "NEUTRALIZADOR DE OLORES: bidón, 5lt",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 235,
+      "nombre": "Neutralizador de olores con atomizador, 700ml",
+      "descripcionProveedor": "NEUTRALIZADOR DE OLORES: con atomizador, 700ml",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 237,
+      "nombre": "Pad disco 20\" blanco",
+      "descripcionProveedor": "PAD: disco 20\" blanco",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 1,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 238,
+      "nombre": "Pad disco 20\" negro",
+      "descripcionProveedor": "PAD: disco 20\" negro",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 1,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 239,
+      "nombre": "Pad disco 20\" rojo",
+      "descripcionProveedor": "PAD: disco 20\" rojo",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 1,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 240,
+      "nombre": "Pala plástica",
+      "descripcionProveedor": "PALA: plástica",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 1,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 245,
+      "nombre": "Paño aseo, algodon, 40x40cm (naranjo, blanco)",
+      "descripcionProveedor": "PAÑO: aseo, algodon, 40x40cm (naranjo, blanco)",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 5,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 229,
+      "nombre": "Paño limpieza, bobina, 690 paños",
+      "descripcionProveedor": "PAÑO: limpieza, bobina, 690 paños. Reutilizable Elite Maxwipe Max 50 Bobina De 690 Unidades",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 243,
+      "nombre": "Paño microfibra",
+      "descripcionProveedor": "PAÑO: microfibra",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 5,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 244,
+      "nombre": "Paño multiuso",
+      "descripcionProveedor": "PAÑO: multiuso",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 5,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 300,
+      "nombre": "Paño toalla",
+      "descripcionProveedor": "PAÑO: toalla",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 10,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 248,
+      "nombre": "Papel higienico, doble hoja 20 mt",
+      "descripcionProveedor": "PAPEL HIGIENICO: doble hoja 16un x 20 mt",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 32,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 249,
+      "nombre": "Papel higienico, hoja simple 50mt",
+      "descripcionProveedor": "PAPEL HIGIENICO: Elite Plus Hoja Simple 4 Rollos 50 M",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 200,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 293,
+      "nombre": "Papel hoja tamaño carta multipropósito, resma500 hojas",
+      "descripcionProveedor": "PAPEL HOJA: Tamaño carta multipropósito, Resma:500 hojas",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 301,
+      "nombre": "Papel protector para cuello, 5 rollos",
+      "descripcionProveedor": "PAPEL: protector para cuello, 5 rollos",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Maquillaje",
+      "activo": true
+    },
+    {
+      "sku": 250,
+      "nombre": "Papel sabanilla 2x50cms x 48 mts",
+      "descripcionProveedor": "PAPEL SABANILLA: 2x50cms x 48 mts",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 251,
+      "nombre": "Papel toalla, cocina 24mt",
+      "descripcionProveedor": "PAPEL: toalla, cocina 24mt",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 8,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 252,
+      "nombre": "Papel toalla, corte limpio, institucional, 250 mts",
+      "descripcionProveedor": "PAPEL: toalla, corte limpio, institucional, 250 mts",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 15,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 306,
+      "nombre": "Paracetamol 500 mg, caja 16 comprimidos",
+      "descripcionProveedor": "PARACETAMOL: 500 mg, caja 16 comprimidos",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Primeros Auxilios",
+      "activo": true
+    },
+    {
+      "sku": 308,
+      "nombre": "Parche curita 100 u",
+      "descripcionProveedor": "PARCHE CURITA: 100 u",
+      "um": "Caja",
+      "umOriginal": "Caja",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Primeros Auxilios",
+      "activo": true
+    },
+    {
+      "sku": 253,
+      "nombre": "Pechera desechable, polietileno, 65x105 cm, 100und",
+      "descripcionProveedor": "PECHERA: desechable, polietileno, 65x105 cm, 100und",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 100,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 366,
+      "nombre": "Percarbonato de sodio",
+      "descripcionProveedor": "PERCARBONATO DE SODIO",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 254,
+      "nombre": "Petalos desmaquillantes",
+      "descripcionProveedor": "PETALOS: desmaquillantes",
+      "um": "Paq",
+      "umOriginal": "Paq",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Maquillaje",
+      "activo": true
+    },
+    {
+      "sku": 286,
+      "nombre": "Pila 23a",
+      "descripcionProveedor": "PILA: 23A",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 284,
+      "nombre": "Pila 9v, cuadrada, unidad",
+      "descripcionProveedor": "PILA: 9V, cuadrada, unidad",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 288,
+      "nombre": "Pila a76",
+      "descripcionProveedor": "PILA: A76",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 289,
+      "nombre": "Pila aa",
+      "descripcionProveedor": "PILA: AA",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 6,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 291,
+      "nombre": "Pila aaa",
+      "descripcionProveedor": "PILA: AAA",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 4,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 290,
+      "nombre": "Pila boton cr2032",
+      "descripcionProveedor": "PILA: boton CR2032",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 315,
+      "nombre": "Polvo compacto, blanco",
+      "descripcionProveedor": "POLVO: compacto, blanco",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Maquillaje",
+      "activo": true
+    },
+    {
+      "sku": 340,
+      "nombre": "Polvo compacto, cafe",
+      "descripcionProveedor": "POLVO: compacto, cafe",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Maquillaje",
+      "activo": true
+    },
+    {
+      "sku": 354,
+      "nombre": "Portacredencial colgante",
+      "descripcionProveedor": "PORTACREDENCIAL:Plasctico",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 353,
+      "nombre": "Portacredencial con gancho",
+      "descripcionProveedor": "PORTACREDENCIAL: Acrilico con gancho",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 257,
+      "nombre": "Removedor de cera (spartan)",
+      "descripcionProveedor": "REMOVEDOR DE CERA (spartan)",
+      "um": "Bidón",
+      "umOriginal": "Bidón",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 149,
+      "nombre": "Revolvedor de café, 1000 u",
+      "descripcionProveedor": "REVOLVEDOR: de café, 1000 u",
+      "um": "Paq 200u",
+      "umOriginal": "Paq 200u",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 332,
+      "nombre": "Sal 1gr, caja 2000 sachet",
+      "descripcionProveedor": "SAL: 1gr, caja 2000 sachet",
+      "um": "Paq 100u",
+      "umOriginal": "Paq 100u",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 258,
+      "nombre": "Secavidrio acero inoxidable  45cms",
+      "descripcionProveedor": "SECAVIDRIO ACERO INOXIDABLE:  45cms",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 259,
+      "nombre": "Sellador piso, 20lt (sika)",
+      "descripcionProveedor": "SELLADOR: piso, 20lt (sika)",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 260,
+      "nombre": "Servilleta restorant coctel 60x160un",
+      "descripcionProveedor": "SERVILLETA: restorant coctel 60x160un",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 25,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 351,
+      "nombre": "Sobre americano blanco",
+      "descripcionProveedor": "SOBRE:Americano blanco",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 10,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 350,
+      "nombre": "Sobre saco oficio papel kraft",
+      "descripcionProveedor": "SOBRE:Saco oficio kraft",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 307,
+      "nombre": "Sulfadiazina de plata  50 g, crema tópica",
+      "descripcionProveedor": "SULFADIAZINA DE PLATA:  50 g, crema tópica",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Primeros Auxilios",
+      "activo": true
+    },
+    {
+      "sku": 263,
+      "nombre": "Talco",
+      "descripcionProveedor": "TALCO",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 292,
+      "nombre": "Tambor toner, dr2340",
+      "descripcionProveedor": "TAMBOR: toner, DR2340",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 160,
+      "nombre": "Té bolsitas, 100un",
+      "descripcionProveedor": "TÉ: bolsitas, 100un",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 3,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 163,
+      "nombre": "Té manzanilla, caja, 20 bolsitas",
+      "descripcionProveedor": "TÉ: manzanilla, caja, 20 bolsitas",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 164,
+      "nombre": "Té menta, caja, 20 bolsitas",
+      "descripcionProveedor": "TÉ: menta, caja, 20 bolsitas",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 328,
+      "nombre": "Tenedor desechable, unidades",
+      "descripcionProveedor": "TENEDOR: desechable, unidades",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 364,
+      "nombre": "Tinta impresora Epson 544 Amarillo",
+      "descripcionProveedor": "TINTA",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 365,
+      "nombre": "Tinta impresora Epson 544 Cian",
+      "descripcionProveedor": "TINTA",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 363,
+      "nombre": "Tinta impresora Epson 544 Magenta",
+      "descripcionProveedor": "TINTA",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 361,
+      "nombre": "Tinta impresora Epson 544 Negro",
+      "descripcionProveedor": "TINTA",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 339,
+      "nombre": "Toalla higienica",
+      "descripcionProveedor": "TOALLA HIGIENICA",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 2,
+      "almacen": "Primeros Auxilios",
+      "activo": true
+    },
+    {
+      "sku": 282,
+      "nombre": "Toner impresora hp85a",
+      "descripcionProveedor": "TONER: impresora HP85A",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 283,
+      "nombre": "Toner impresora tn2340",
+      "descripcionProveedor": "TONER: impresora TN2340",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Oficina",
+      "activo": true
+    },
+    {
+      "sku": 264,
+      "nombre": "Trapero húmedo, desinfectante, c/ojal",
+      "descripcionProveedor": "TRAPERO: húmedo, desinfectante, c/ojal",
+      "um": "Paq",
+      "umOriginal": "Paq",
+      "especial": false,
+      "stockMinimo": 5,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 265,
+      "nombre": "Trapero microfibra, con ojal",
+      "descripcionProveedor": "TRAPERO: microfibra, con ojal",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 0,
+      "almacen": "Elementos Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 266,
+      "nombre": "Vaso desechable, doble capa, kraft, 250cc",
+      "descripcionProveedor": "VASO: desechable, doble capa, kraft, 250cc",
+      "um": "Paq",
+      "umOriginal": "Paq",
+      "especial": false,
+      "stockMinimo": 24,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 358,
+      "nombre": "Vinagre blanco 1lt",
+      "descripcionProveedor": "VINAGRE: blanco 1lt",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    },
+    {
+      "sku": 165,
+      "nombre": "Vinagre blanco 5lt",
+      "descripcionProveedor": "VINAGRE: blanco 5lt",
+      "um": "Bidón",
+      "umOriginal": "Bidón",
+      "especial": false,
+      "stockMinimo": 1,
+      "almacen": "Alimento",
+      "activo": true
+    },
+    {
+      "sku": 360,
+      "nombre": "Virutilla",
+      "descripcionProveedor": "VIRUTILLA",
+      "um": "Un",
+      "umOriginal": "Un",
+      "especial": true,
+      "stockMinimo": 1,
+      "almacen": "Limpieza",
+      "activo": true
+    }
+  ],
+  "productoProveedor": [
+    {
+      "sku": 336,
+      "proveedor": "Prisa",
+      "codigoProveedor": "28049",
+      "observacion": "300 Sachet de 10ml",
+      "preferido": true
+    },
+    {
+      "sku": 294,
+      "proveedor": "Prisa",
+      "codigoProveedor": "25118",
+      "observacion": "Marca: Torre",
+      "preferido": true
+    },
+    {
+      "sku": 168,
+      "proveedor": "Prisa",
+      "codigoProveedor": null,
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 170,
+      "proveedor": "Prisa",
+      "codigoProveedor": "41987",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 169,
+      "proveedor": "Prisa",
+      "codigoProveedor": "70710",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 171,
+      "proveedor": "Prisa",
+      "codigoProveedor": "22373",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 333,
+      "proveedor": "Prisa",
+      "codigoProveedor": "99845",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 177,
+      "proveedor": "Prisa",
+      "codigoProveedor": "81580",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 178,
+      "proveedor": "Prisa",
+      "codigoProveedor": "65929",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 179,
+      "proveedor": "Prisa",
+      "codigoProveedor": "91600",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 180,
+      "proveedor": "Prisa",
+      "codigoProveedor": "91602",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 341,
+      "proveedor": "Prisa",
+      "codigoProveedor": "89197AAZ",
+      "observacion": "Poliplastic 120x140 Cm Azul 5 Unidades",
+      "preferido": true
+    },
+    {
+      "sku": 182,
+      "proveedor": "Prisa",
+      "codigoProveedor": "42052",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 356,
+      "proveedor": "Prisa",
+      "codigoProveedor": "84979",
+      "observacion": "Rollo 50x55c 20un",
+      "preferido": true
+    },
+    {
+      "sku": 356,
+      "proveedor": "San Agustin",
+      "codigoProveedor": "20701010",
+      "observacion": null,
+      "preferido": false
+    },
+    {
+      "sku": 184,
+      "proveedor": "Prisa",
+      "codigoProveedor": "17309",
+      "observacion": "Paq 100u 20x30cm",
+      "preferido": true
+    },
+    {
+      "sku": 111,
+      "proveedor": "Prisa",
+      "codigoProveedor": "70357",
+      "observacion": "Café grano Molido Cafetal Tio Pepe 250 G",
+      "preferido": true
+    },
+    {
+      "sku": 342,
+      "proveedor": "Prisa",
+      "codigoProveedor": "86959",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 348,
+      "proveedor": "Prisa",
+      "codigoProveedor": "10930",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 269,
+      "proveedor": "Prisa",
+      "codigoProveedor": "79723",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 270,
+      "proveedor": "Prisa",
+      "codigoProveedor": "79724",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 189,
+      "proveedor": "Prisa",
+      "codigoProveedor": "25692",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 193,
+      "proveedor": "Prisa",
+      "codigoProveedor": "80484CH",
+      "observacion": "Desinfectante De Baño Neo Aroma Cherry 5 L",
+      "preferido": true
+    },
+    {
+      "sku": 362,
+      "proveedor": "Prisa",
+      "codigoProveedor": "28031",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 200,
+      "proveedor": "Prisa",
+      "codigoProveedor": "92057",
+      "observacion": "esponja 4un",
+      "preferido": true
+    },
+    {
+      "sku": 200,
+      "proveedor": "San Agustin",
+      "codigoProveedor": "20102040",
+      "observacion": null,
+      "preferido": false
+    },
+    {
+      "sku": 202,
+      "proveedor": "Prisa",
+      "codigoProveedor": "19659",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 206,
+      "proveedor": "Prisa",
+      "codigoProveedor": "34352L",
+      "observacion": "Guantes De Nitrilo Tresor Examinación Sin Polvos Talla L Azul 100 Unidades",
+      "preferido": true
+    },
+    {
+      "sku": 207,
+      "proveedor": "Prisa",
+      "codigoProveedor": "34352M",
+      "observacion": "Guantes De Nitrilo Tresor Examinación Sin Polvos Talla M Azul 100 Unidades",
+      "preferido": true
+    },
+    {
+      "sku": 208,
+      "proveedor": "Prisa",
+      "codigoProveedor": "34352S",
+      "observacion": "Guantes De Nitrilo Tresor Examinación Sin Polvos Talla S Azul 100 Unidades",
+      "preferido": true
+    },
+    {
+      "sku": 210,
+      "proveedor": "Prisa",
+      "codigoProveedor": "13280EF",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 211,
+      "proveedor": "Prisa",
+      "codigoProveedor": "88206",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 212,
+      "proveedor": "Prisa",
+      "codigoProveedor": "88208",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 213,
+      "proveedor": "Prisa",
+      "codigoProveedor": "70711",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 220,
+      "proveedor": "Prisa",
+      "codigoProveedor": "76897",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 224,
+      "proveedor": "Prisa",
+      "codigoProveedor": "80715",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 228,
+      "proveedor": "Prisa",
+      "codigoProveedor": "100001033",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 229,
+      "proveedor": "Prisa",
+      "codigoProveedor": "40973",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 243,
+      "proveedor": "Prisa",
+      "codigoProveedor": "42925",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 248,
+      "proveedor": "Prisa",
+      "codigoProveedor": "91293",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 249,
+      "proveedor": "Prisa",
+      "codigoProveedor": "12611",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 251,
+      "proveedor": "Prisa",
+      "codigoProveedor": "12626",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 252,
+      "proveedor": "Prisa",
+      "codigoProveedor": "78602",
+      "observacion": "Toalla De Papel Elite Autocorte Evolution 2 Rollos 250 M Hoja Simple",
+      "preferido": true
+    },
+    {
+      "sku": 284,
+      "proveedor": "Prisa",
+      "codigoProveedor": "12424",
+      "observacion": "Duracell",
+      "preferido": true
+    },
+    {
+      "sku": 260,
+      "proveedor": "Prisa",
+      "codigoProveedor": "78606",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 160,
+      "proveedor": "Prisa",
+      "codigoProveedor": "21900",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 163,
+      "proveedor": "Prisa",
+      "codigoProveedor": "12608",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 364,
+      "proveedor": "Prisa",
+      "codigoProveedor": null,
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 365,
+      "proveedor": "Prisa",
+      "codigoProveedor": null,
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 363,
+      "proveedor": "Prisa",
+      "codigoProveedor": null,
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 361,
+      "proveedor": "Prisa",
+      "codigoProveedor": "29084",
+      "observacion": "Botella de Tinta Epson T544",
+      "preferido": true
+    },
+    {
+      "sku": 339,
+      "proveedor": "Prisa",
+      "codigoProveedor": "52201",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 283,
+      "proveedor": "Prisa",
+      "codigoProveedor": "26950",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 264,
+      "proveedor": "Prisa",
+      "codigoProveedor": "88271",
+      "observacion": null,
+      "preferido": true
+    },
+    {
+      "sku": 266,
+      "proveedor": "Prisa",
+      "codigoProveedor": "78706",
+      "observacion": "Vaso kraft 8oz",
+      "preferido": true
+    }
+  ],
+  "stockInicial": [
+    {
+      "anio": 2027,
+      "sku": 336,
+      "cantidad": 24
+    },
+    {
+      "anio": 2027,
+      "sku": 294,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 168,
+      "cantidad": 3
+    },
+    {
+      "anio": 2027,
+      "sku": 170,
+      "cantidad": 5
+    },
+    {
+      "anio": 2027,
+      "sku": 169,
+      "cantidad": 15
+    },
+    {
+      "anio": 2027,
+      "sku": 171,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 172,
+      "cantidad": 13
+    },
+    {
+      "anio": 2027,
+      "sku": 173,
+      "cantidad": 3
+    },
+    {
+      "anio": 2027,
+      "sku": 174,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 175,
+      "cantidad": 4
+    },
+    {
+      "anio": 2027,
+      "sku": 201,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 333,
+      "cantidad": 24
+    },
+    {
+      "anio": 2027,
+      "sku": 177,
+      "cantidad": 5
+    },
+    {
+      "anio": 2027,
+      "sku": 178,
+      "cantidad": 7
+    },
+    {
+      "anio": 2027,
+      "sku": 285,
+      "cantidad": 4
+    },
+    {
+      "anio": 2027,
+      "sku": 179,
+      "cantidad": 79
+    },
+    {
+      "anio": 2027,
+      "sku": 180,
+      "cantidad": 58
+    },
+    {
+      "anio": 2027,
+      "sku": 341,
+      "cantidad": 60
+    },
+    {
+      "anio": 2027,
+      "sku": 182,
+      "cantidad": 48
+    },
+    {
+      "anio": 2027,
+      "sku": 356,
+      "cantidad": 56
+    },
+    {
+      "anio": 2027,
+      "sku": 183,
+      "cantidad": 24
+    },
+    {
+      "anio": 2027,
+      "sku": 184,
+      "cantidad": 4
+    },
+    {
+      "anio": 2027,
+      "sku": 185,
+      "cantidad": 3
+    },
+    {
+      "anio": 2027,
+      "sku": 111,
+      "cantidad": 6
+    },
+    {
+      "anio": 2027,
+      "sku": 342,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 348,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 349,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 269,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 270,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 187,
+      "cantidad": 18
+    },
+    {
+      "anio": 2027,
+      "sku": 188,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 271,
+      "cantidad": 9
+    },
+    {
+      "anio": 2027,
+      "sku": 304,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 343,
+      "cantidad": 16
+    },
+    {
+      "anio": 2027,
+      "sku": 344,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 345,
+      "cantidad": 3
+    },
+    {
+      "anio": 2027,
+      "sku": 346,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 189,
+      "cantidad": 3
+    },
+    {
+      "anio": 2027,
+      "sku": 190,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 305,
+      "cantidad": 45
+    },
+    {
+      "anio": 2027,
+      "sku": 303,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 272,
+      "cantidad": 4
+    },
+    {
+      "anio": 2027,
+      "sku": 191,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 273,
+      "cantidad": 4
+    },
+    {
+      "anio": 2027,
+      "sku": 120,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 193,
+      "cantidad": 7
+    },
+    {
+      "anio": 2027,
+      "sku": 194,
+      "cantidad": 9
+    },
+    {
+      "anio": 2027,
+      "sku": 274,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 275,
+      "cantidad": 5
+    },
+    {
+      "anio": 2027,
+      "sku": 276,
+      "cantidad": 4
+    },
+    {
+      "anio": 2027,
+      "sku": 261,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 195,
+      "cantidad": 6
+    },
+    {
+      "anio": 2027,
+      "sku": 352,
+      "cantidad": 31
+    },
+    {
+      "anio": 2027,
+      "sku": 362,
+      "cantidad": 13
+    },
+    {
+      "anio": 2027,
+      "sku": 196,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 197,
+      "cantidad": 10
+    },
+    {
+      "anio": 2027,
+      "sku": 198,
+      "cantidad": 9
+    },
+    {
+      "anio": 2027,
+      "sku": 200,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 314,
+      "cantidad": 82
+    },
+    {
+      "anio": 2027,
+      "sku": 309,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 317,
+      "cantidad": 6
+    },
+    {
+      "anio": 2027,
+      "sku": 355,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 312,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 311,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 202,
+      "cantidad": 17
+    },
+    {
+      "anio": 2027,
+      "sku": 203,
+      "cantidad": 5
+    },
+    {
+      "anio": 2027,
+      "sku": 204,
+      "cantidad": 7
+    },
+    {
+      "anio": 2027,
+      "sku": 205,
+      "cantidad": 4
+    },
+    {
+      "anio": 2027,
+      "sku": 206,
+      "cantidad": 20
+    },
+    {
+      "anio": 2027,
+      "sku": 207,
+      "cantidad": 21
+    },
+    {
+      "anio": 2027,
+      "sku": 208,
+      "cantidad": 16
+    },
+    {
+      "anio": 2027,
+      "sku": 209,
+      "cantidad": 17
+    },
+    {
+      "anio": 2027,
+      "sku": 210,
+      "cantidad": 5
+    },
+    {
+      "anio": 2027,
+      "sku": 211,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 212,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 213,
+      "cantidad": 11
+    },
+    {
+      "anio": 2027,
+      "sku": 215,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 216,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 217,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 218,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 219,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 278,
+      "cantidad": -11
+    },
+    {
+      "anio": 2027,
+      "sku": 279,
+      "cantidad": -12
+    },
+    {
+      "anio": 2027,
+      "sku": 280,
+      "cantidad": 16
+    },
+    {
+      "anio": 2027,
+      "sku": 220,
+      "cantidad": 7
+    },
+    {
+      "anio": 2027,
+      "sku": 221,
+      "cantidad": 17
+    },
+    {
+      "anio": 2027,
+      "sku": 222,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 359,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 224,
+      "cantidad": 3
+    },
+    {
+      "anio": 2027,
+      "sku": 318,
+      "cantidad": 12
+    },
+    {
+      "anio": 2027,
+      "sku": 295,
+      "cantidad": 9
+    },
+    {
+      "anio": 2027,
+      "sku": 296,
+      "cantidad": 7
+    },
+    {
+      "anio": 2027,
+      "sku": 297,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 298,
+      "cantidad": 5
+    },
+    {
+      "anio": 2027,
+      "sku": 347,
+      "cantidad": 3
+    },
+    {
+      "anio": 2027,
+      "sku": 227,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 228,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 230,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 231,
+      "cantidad": 15
+    },
+    {
+      "anio": 2027,
+      "sku": 357,
+      "cantidad": -12
+    },
+    {
+      "anio": 2027,
+      "sku": 233,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 234,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 235,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 237,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 238,
+      "cantidad": 3
+    },
+    {
+      "anio": 2027,
+      "sku": 239,
+      "cantidad": 4
+    },
+    {
+      "anio": 2027,
+      "sku": 240,
+      "cantidad": 20
+    },
+    {
+      "anio": 2027,
+      "sku": 245,
+      "cantidad": 35
+    },
+    {
+      "anio": 2027,
+      "sku": 229,
+      "cantidad": 42
+    },
+    {
+      "anio": 2027,
+      "sku": 243,
+      "cantidad": 64
+    },
+    {
+      "anio": 2027,
+      "sku": 244,
+      "cantidad": 50
+    },
+    {
+      "anio": 2027,
+      "sku": 300,
+      "cantidad": 24
+    },
+    {
+      "anio": 2027,
+      "sku": 248,
+      "cantidad": 61
+    },
+    {
+      "anio": 2027,
+      "sku": 249,
+      "cantidad": 1218
+    },
+    {
+      "anio": 2027,
+      "sku": 293,
+      "cantidad": 18
+    },
+    {
+      "anio": 2027,
+      "sku": 301,
+      "cantidad": 7
+    },
+    {
+      "anio": 2027,
+      "sku": 250,
+      "cantidad": 5
+    },
+    {
+      "anio": 2027,
+      "sku": 251,
+      "cantidad": 13
+    },
+    {
+      "anio": 2027,
+      "sku": 252,
+      "cantidad": 49
+    },
+    {
+      "anio": 2027,
+      "sku": 306,
+      "cantidad": 6
+    },
+    {
+      "anio": 2027,
+      "sku": 308,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 253,
+      "cantidad": 157
+    },
+    {
+      "anio": 2027,
+      "sku": 366,
+      "cantidad": 5
+    },
+    {
+      "anio": 2027,
+      "sku": 254,
+      "cantidad": 36
+    },
+    {
+      "anio": 2027,
+      "sku": 286,
+      "cantidad": 3
+    },
+    {
+      "anio": 2027,
+      "sku": 284,
+      "cantidad": 5
+    },
+    {
+      "anio": 2027,
+      "sku": 288,
+      "cantidad": 15
+    },
+    {
+      "anio": 2027,
+      "sku": 289,
+      "cantidad": 9
+    },
+    {
+      "anio": 2027,
+      "sku": 291,
+      "cantidad": 13
+    },
+    {
+      "anio": 2027,
+      "sku": 290,
+      "cantidad": 10
+    },
+    {
+      "anio": 2027,
+      "sku": 315,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 340,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 354,
+      "cantidad": 43
+    },
+    {
+      "anio": 2027,
+      "sku": 353,
+      "cantidad": 180
+    },
+    {
+      "anio": 2027,
+      "sku": 257,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 149,
+      "cantidad": 10
+    },
+    {
+      "anio": 2027,
+      "sku": 332,
+      "cantidad": 9
+    },
+    {
+      "anio": 2027,
+      "sku": 258,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 259,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 260,
+      "cantidad": 68
+    },
+    {
+      "anio": 2027,
+      "sku": 351,
+      "cantidad": 200
+    },
+    {
+      "anio": 2027,
+      "sku": 350,
+      "cantidad": 202
+    },
+    {
+      "anio": 2027,
+      "sku": 307,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 263,
+      "cantidad": 4
+    },
+    {
+      "anio": 2027,
+      "sku": 292,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 160,
+      "cantidad": 8
+    },
+    {
+      "anio": 2027,
+      "sku": 163,
+      "cantidad": 6
+    },
+    {
+      "anio": 2027,
+      "sku": 164,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 328,
+      "cantidad": 0
+    },
+    {
+      "anio": 2027,
+      "sku": 364,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 365,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 363,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 361,
+      "cantidad": 1
+    },
+    {
+      "anio": 2027,
+      "sku": 339,
+      "cantidad": 19
+    },
+    {
+      "anio": 2027,
+      "sku": 282,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 283,
+      "cantidad": 2
+    },
+    {
+      "anio": 2027,
+      "sku": 264,
+      "cantidad": 22
+    },
+    {
+      "anio": 2027,
+      "sku": 265,
+      "cantidad": 24
+    },
+    {
+      "anio": 2027,
+      "sku": 266,
+      "cantidad": 66
+    },
+    {
+      "anio": 2027,
+      "sku": 358,
+      "cantidad": 5
+    },
+    {
+      "anio": 2027,
+      "sku": 165,
+      "cantidad": 7
+    },
+    {
+      "anio": 2027,
+      "sku": 360,
+      "cantidad": 0
+    }
+  ],
+  "movimientos": [
+    {
+      "folio": "20260918-0001",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 248,
+      "tipo": "salida",
+      "cantidad": 20,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0002",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 185,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0003",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 180,
+      "tipo": "salida",
+      "cantidad": 2,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0004",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 179,
+      "tipo": "salida",
+      "cantidad": 2,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0005",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 249,
+      "tipo": "salida",
+      "cantidad": 72,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0006",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 341,
+      "tipo": "salida",
+      "cantidad": 3,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0007",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 359,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0008",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 248,
+      "tipo": "salida",
+      "cantidad": 4,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0009",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 180,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0010",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 165,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0011",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 341,
+      "tipo": "salida",
+      "cantidad": 3,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0012",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 252,
+      "tipo": "salida",
+      "cantidad": 2,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0013",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 249,
+      "tipo": "salida",
+      "cantidad": 20,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0014",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 173,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0015",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 180,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0016",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 179,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0017",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 341,
+      "tipo": "salida",
+      "cantidad": 5,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0018",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 248,
+      "tipo": "salida",
+      "cantidad": 4,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0019",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 195,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0020",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 266,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0021",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 111,
+      "tipo": "ingreso",
+      "cantidad": 10,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0022",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 260,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0023",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 160,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0024",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 163,
+      "tipo": "salida",
+      "cantidad": 1,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    },
+    {
+      "folio": "20260918-0025",
+      "fecha": "2026-09-18T12:00:00-03:00",
+      "sku": 249,
+      "tipo": "salida",
+      "cantidad": 4,
+      "valorUnitario": null,
+      "observacion": "Importado del Excel (sin fecha original)",
+      "responsable": "Importación Excel"
+    }
+  ],
+  "solicitudes": [
+    {
+      "sku": 234,
+      "productoTexto": null,
+      "cantidad": 2,
+      "um": "Bidón",
+      "proveedor": "Baden Power",
+      "codigoProveedor": null,
+      "enlace": null,
+      "estado": "por_comprar",
+      "origen": "manual",
+      "fechaSolicitud": "2026-09-11T09:00:00-03:00",
+      "fechaRecepcion": null,
+      "observacion": null
+    },
+    {
+      "sku": 315,
+      "productoTexto": null,
+      "cantidad": 2,
+      "um": "Un",
+      "proveedor": null,
+      "codigoProveedor": null,
+      "enlace": null,
+      "estado": "por_comprar",
+      "origen": "manual",
+      "fechaSolicitud": "2026-09-11T09:00:00-03:00",
+      "fechaRecepcion": null,
+      "observacion": null
+    },
+    {
+      "sku": 222,
+      "productoTexto": null,
+      "cantidad": 1,
+      "um": "Un",
+      "proveedor": "Easy",
+      "codigoProveedor": null,
+      "enlace": "https://www.easy.cl/shampoo-para-tapiz-1370022/p?",
+      "estado": "por_comprar",
+      "origen": "manual",
+      "fechaSolicitud": "2026-09-11T09:00:00-03:00",
+      "fechaRecepcion": null,
+      "observacion": null
+    },
+    {
+      "sku": 170,
+      "productoTexto": null,
+      "cantidad": 6,
+      "um": "Un",
+      "proveedor": "Prisa",
+      "codigoProveedor": "41987",
+      "enlace": null,
+      "estado": "por_comprar",
+      "origen": "manual",
+      "fechaSolicitud": "2026-09-11T09:00:00-03:00",
+      "fechaRecepcion": null,
+      "observacion": null
+    }
+  ]
+}
