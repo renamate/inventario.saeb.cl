@@ -14,9 +14,18 @@ jobs:
       - run: node scripts/materialize-upload.cjs
       - name: Commit materialized files
         run: |
+          set -eux
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "src/app/(app)/compras/tablero-compras.tsx" data/seed.json supabase/seed.sql package-lock.json || true
-          git diff --cached --quiet && echo "nothing to commit" && exit 0
+          ls -la data supabase .upload || true
+          wc -c "src/app/(app)/compras/tablero-compras.tsx" data/seed.json supabase/seed.sql package-lock.json || true
+          git status --porcelain
+          git add -A -- "src/app/(app)/compras/tablero-compras.tsx" data/seed.json supabase/seed.sql package-lock.json
+          git status --porcelain
+          git diff --cached --stat
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
           git commit -m "POC Inventario SAEB: materializar seed, tablero y package-lock"
           git push
