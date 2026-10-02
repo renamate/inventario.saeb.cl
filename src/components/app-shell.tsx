@@ -29,7 +29,7 @@ import {
 import { cn } from "@/lib/utils";
 import { ROL_LABEL, type Usuario } from "@/lib/types";
 
-type Props = { usuario: Usuario; modo: "supabase" | "local"; children: React.ReactNode };
+type Props = { usuario: Usuario; modo: "neon" | "local"; children: React.ReactNode };
 
 const NAV = [
   { href: "/", label: "Inicio", icon: LayoutDashboard },
@@ -78,7 +78,7 @@ function MenuUsuario({ usuario, modo }: Omit<Props, "children">) {
           <div className="font-medium">{usuario.nombre}</div>
           <div className="text-xs font-normal text-muted-foreground">Perfil: {ROL_LABEL[usuario.rol]}</div>
           <div className="mt-1 text-xs font-normal text-muted-foreground">
-            Datos: {modo === "supabase" ? "Supabase" : "demo local"}
+            Datos: {modo === "neon" ? "Neon" : "demo local"}
           </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
@@ -143,14 +143,14 @@ export function AppShell({ usuario, modo, children }: Props) {
           ))}
         </nav>
         <div className="mt-auto rounded-xl border bg-muted/50 p-3 text-xs text-muted-foreground">
-          {modo === "supabase" ? (
-            <>Conectado a Supabase.</>
+          {modo === "neon" ? (
+            <>Conectado a Neon (Postgres).</>
           ) : (
             <>
               <Badge variant="outline" className="mb-1.5">
                 Modo demo local
               </Badge>
-              <p>Datos reales del Excel cargados en memoria. Conecta Supabase para persistirlos.</p>
+              <p>Datos reales del Excel cargados en memoria. Configura DATABASE_URL (Neon) para persistirlos.</p>
             </>
           )}
         </div>
