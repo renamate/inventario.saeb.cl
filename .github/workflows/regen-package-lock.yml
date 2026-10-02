@@ -1,0 +1,30 @@
+name: Regenerate package-lock
+on:
+  workflow_dispatch:
+  push:
+    branches: [cursor/neon-migration-101f]
+    paths: ['.github/workflows/regen-package-lock.yml']
+permissions:
+  contents: write
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Regenerate package-lock.json from package.json
+        run: npm install --package-lock-only
+      - name: Show neon/supabase resolution
+        run: |
+          node -e "const l=require('./package-lock.json'); const p=l.packages||{}; console.log('root', p['']&&p[''].dependencies); Object.keys(p).filter(k=>/neon|supabase/i.test(k)).forEach(k=>console.log(k, p[k].version));"
+      - name: Commit package-lock.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json
+          git status
+          git diff --cached --stat
+          git diff --cached --quiet || git commit -m "chore(neon): regenerate package-lock.json for @neondatabase/serverless"
+          git push
