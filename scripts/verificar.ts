@@ -1,6 +1,6 @@
 /**
  * Verifica que los datos cuadren con el Excel y que el flujo básico funcione
- * contra el origen configurado (Supabase si hay variables, si no el modo demo local).
+ * contra el origen configurado (Neon si hay DATABASE_URL, si no el modo demo local).
  *
  * Uso: npm run verificar            (no modifica datos: solo lectura)
  *      npm run verificar -- --escribir   (además registra una salida y mueve una solicitud de prueba)
